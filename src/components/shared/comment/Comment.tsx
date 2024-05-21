@@ -1,6 +1,4 @@
 import classes from "./Comment.module.css";
-import { AiOutlineLike } from "react-icons/ai";
-import { MdSort } from "react-icons/md";
 import { videoType } from "@/types";
 import { useContext, useEffect, useState } from "react";
 import {
@@ -58,23 +56,18 @@ function Comment({ videoData }: { videoData: videoType }) {
   // add commetns
   const {
     mutateAsync: addComment,
-    data: addCommentStatus,
-    isPending: addPending,
-    isError: addisError,
-    error: addError,
+    
   } = addVideoCommentQuery();
 
   //delete comment query
   const {
     mutateAsync: deleteComment,
     data: deleteCommentStatus,
-    isPending: deletePending,
-    isError: deleteisError,
-    error: deleteError,
+  
   } = deleteVideoCommentQuery();
 
   //delete comment query
-  const { mutateAsync: editCommentReq, data: editCommentStatus } =
+  const { mutateAsync: editCommentReq} =
     editVideoCommentQuery();
 
   const inputFocusHandler = () => {

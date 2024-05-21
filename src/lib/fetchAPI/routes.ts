@@ -1,3 +1,3 @@
 export enum paths{
-    server = "http://localhost:8000/api/v1"
+    server = "https://videostramingbackend-65mf.onrender.com/api/v1"
 } 

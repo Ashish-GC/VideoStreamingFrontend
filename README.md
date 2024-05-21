@@ -1,5 +1,9 @@
 # React + TypeScript + Vite
 
+A full stack video streaming website 
+
+Website :
+
 Issues : 
 
 1) better way to handle image / video file

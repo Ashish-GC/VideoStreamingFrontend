@@ -1,25 +1,19 @@
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import classes from "./SideBar.module.css";
 import logo from "@/assets/logo.jpeg";
 import { MdOutlineHome } from "react-icons/md";
 import { MdOutlineSubscriptions } from "react-icons/md";
 import { PiUserRectangle } from "react-icons/pi";
-import { MdHistory } from "react-icons/md";
-import { MdOutlinePlaylistPlay } from "react-icons/md";
 import { BiLike } from "react-icons/bi";
 import { Link, NavLink } from "react-router-dom";
 import { signOutUserQuery } from "@/lib/react-query/queriesAndMutation";
 import { initialUser, userContext } from "@/context/Context";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { GoSignOut } from "react-icons/go";
 
 function SideBar() {
   const {
     mutateAsync: signOut,
     data,
-    isPending,
-    isError,
-    error,
   } = signOutUserQuery();
   const { isAuthenticated, setUser, setIsAuthenticated } =
     useContext(userContext);

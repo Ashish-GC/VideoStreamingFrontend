@@ -31,18 +31,14 @@ function Video() {
   const { user } = useContext(userContext);
 
   const {
-    data: subscribeStatus,
     mutateAsync: toggleSubscription,
-    isPending: isSubscripitonPending,
-    isError: isSubscripitonError,
-    error: subscripitonError,
   } = toggleSubscriptionQuery();
 
   //get subscription status
   const { data: subsStatus } = getSubscriptionStatusQuery(videoData?.owner);
 
   //liked videos
-  const { mutateAsync: toggleLike, data: likeStatus } = toggleVideoLikeQuery();
+  const { mutateAsync: toggleLike } = toggleVideoLikeQuery();
   const { data: isLiked } = getLikeStatusQuery(params.videoId);
 
   const ytDate = dateformatter(videoData ? videoData.createdAt : "");

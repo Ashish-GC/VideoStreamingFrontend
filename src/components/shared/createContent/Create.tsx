@@ -43,9 +43,7 @@ function Create() {
   const {
     mutateAsync: uploadVideo,
     isError,
-    data,
     isPending,
-    error,
   } = uploadAVideoQuery();
 
   const form = useForm<z.infer<typeof FormSchema>>({

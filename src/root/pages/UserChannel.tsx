@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import classes from "./UserChannel.module.css";
 import UnAuthScreen from "@/components/shared/unAuthScreen/UnAuthScreen";
 import { userContext } from "@/context/Context";

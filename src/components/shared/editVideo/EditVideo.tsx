@@ -37,7 +37,6 @@ function EditVideo({ video }: { video: videoType }) {
     isError,
     data,
     isPending,
-    error,
   } = editVideoQuery();
 
   //notification

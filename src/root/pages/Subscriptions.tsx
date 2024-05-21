@@ -1,5 +1,5 @@
 import classes from "./Subscription.module.css";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { userContext } from "@/context/Context";
 import UnAuthScreen from "@/components/shared/unAuthScreen/UnAuthScreen";
 import {
@@ -20,9 +20,6 @@ function Subscriptions() {
   const {
     data: subscribeStatus,
     mutateAsync: toggleSubscription,
-    isPending: isSubscripitonPending,
-    isError: isSubscripitonError,
-    error: subscripitonError,
   } = toggleSubscriptionQuery();
 
   return (

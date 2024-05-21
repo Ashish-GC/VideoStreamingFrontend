@@ -24,9 +24,6 @@ function CustomizeChannel() {
   const {
     mutateAsync: updateAccountDetails,
     data: updatedUserInfo,
-    isPending: userUpdatePending,
-    isError: userUpdateIsError,
-    error: userUpdateError,
   } = updateAccountDetailsQuery();
 
   const {

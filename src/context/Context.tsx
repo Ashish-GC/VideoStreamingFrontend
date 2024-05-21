@@ -1,7 +1,6 @@
 import { getCurrentUserQuery } from "@/lib/react-query/queriesAndMutation";
 import { UserContextType, userType } from "@/types";
-import { Description } from "@radix-ui/react-dialog";
-import React, { useState, ReactNode, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { createContext } from "react";
 
 export const initialUser = {
@@ -33,9 +32,6 @@ function ContextProvider({ children }: { children: React.ReactNode }) {
 
   const {
     mutateAsync: getCurrentUser,
-    data,
-    isError,
-    isPending,
   } = getCurrentUserQuery();
 
   const authenticateUser= async()=>{

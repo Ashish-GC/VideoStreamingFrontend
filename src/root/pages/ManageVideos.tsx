@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import classes from "./ManageVideos.module.css";
 import {
   deleteVideoQuery,
@@ -23,16 +23,10 @@ function ManageVideos() {
   const {
     mutateAsync: togglePublish,
     data: publishStatus,
-    isPending: publishPending,
-    isError: publishIsError,
-    error: publishError,
   } = togglePublishStatusQuery();
   const {
     mutateAsync: deleteVideo,
     data: deleteVideoStatus,
-    isPending: deletePending,
-    isError: deleteIsError,
-    error: deleteError,
   } = deleteVideoQuery();
 
   //notification

@@ -2,8 +2,6 @@
 import { Link } from "react-router-dom"
 import classes from "./Card.module.css"
 import { videoType } from '@/types'
-import { userContext } from "@/context/Context";
-import { useContext} from "react";
 import { dateformatter } from "./dateformatter";
 
 function Card({video}:{video:videoType}) {

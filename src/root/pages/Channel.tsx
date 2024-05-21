@@ -14,7 +14,7 @@ import { useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 function Channel() {
-  const [nav, setNav] = useState("home");
+  const [nav] = useState("home");
   const params = useParams();
 
   //get user by channelID
@@ -35,11 +35,7 @@ function Channel() {
 
   //toggle subscription
   const {
-    data: subscribeStatus,
     mutateAsync: toggleSubscription,
-    isPending: isSubscripitonPending,
-    isError: isSubscripitonError,
-    error: subscripitonError,
   } = toggleSubscriptionQuery();
 
   //get subscription status

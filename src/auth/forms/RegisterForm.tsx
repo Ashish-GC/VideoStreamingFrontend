@@ -44,9 +44,7 @@ function RegisterForm() {
   const {
     mutateAsync: registerUser,
     isError,
-    data,
     isPending,
-    error,
   } = registerUserQuery();
 
   const form = useForm<z.infer<typeof FormSchema>>({

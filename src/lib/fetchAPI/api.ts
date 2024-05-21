@@ -1,4 +1,4 @@
-import { loginUserType, registerUserType, updateUserType, uploadVideoFormType, userType, videoType } from "@/types"
+import { loginUserType, registerUserType, updateUserType, uploadVideoFormType, videoType } from "@/types"
 import { paths } from "./routes";
 import FormData from "form-data"
 

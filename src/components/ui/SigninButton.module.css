@@ -1,0 +1,32 @@
+ .signinButton div {
+    display: flex;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
+.signinButton{
+   display: flex;
+   gap: 10px;
+   color: rgb(52, 52, 253);
+}
+ .signinButton div p{
+    font-size: 11px;
+}
+.signinButton div:hover{
+    background-color:rgb(229, 229, 245)
+}
+.signinButton div:active{
+    /* transform: translateY(0.4px); */
+}
+
+@media screen and (max-width: 480px) {  
+    .signinButton div p{
+       /* display: none; */
+    }
+    .signinButton div {
+        padding: 0;
+        border: none;
+    }
+}

@@ -1,0 +1,43 @@
+.main{
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 15px;
+    padding-top: 20px;
+    font-size: 14px;
+}
+.main img{
+    width: 13rem;
+}
+.main button{
+    border: 2px solid black;
+    background: #000;
+    color: white;
+    margin-top: 1.5rem;
+    padding:0.5rem 1.5rem 0.5rem 1.5rem;
+    border-radius: 13px;
+}
+
+.dialog{
+    min-width: 50vw;
+    min-height: 50vh;
+}
+.dialogHeader{
+    padding: 1rem;
+    border-bottom: 1px solid rgb(172, 172, 172);
+}
+.dialogContent{
+    margin-top: 30px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input:focus{
+    border:none
+}

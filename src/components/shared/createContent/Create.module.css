@@ -1,0 +1,92 @@
+.main{
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 15px;
+    padding-top: 20px;
+    font-size: 14px;
+}
+.main img{
+    width: 13rem;
+}
+.main button{
+    border: 2px solid black;
+    background: #000;
+    color: white;
+    margin-top: 1.5rem;
+    padding:0.5rem 1.5rem 0.5rem 1.5rem;
+    border-radius: 13px;
+}
+
+.dialog{
+    min-width: 70vw;
+    min-height: 80vh;
+}
+.dialogHeader{
+    padding: 1rem;
+    border-bottom: 1px solid rgb(172, 172, 172);
+}
+.dialogContent{
+    margin-top: 30px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input:focus{
+    border:none
+}
+
+.preview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+
+}
+.previewVideo{
+    object-fit: contain;
+    border-radius: 14px;
+}
+.previewContent{
+   width: 70%;
+   color: black;
+}
+.previewContent .title{
+   font-weight: bold;
+}
+.desc{
+    margin-top: 10px;
+    background: rgb(226, 226, 226);
+    padding: 10px 5px 10px 5px
+}
+
+@media screen and (max-width: 1024px) { 
+}
+
+@media screen and (max-width: 480px) {  
+    .main{
+        padding-top: 0px;
+        font-size: 12px;
+    }
+    .main img{
+        width: 10rem;
+    }
+
+    .dialogHeader{
+        padding: 0.5rem;
+    }
+    .dialogContent{
+        margin-top: 5px;
+    }
+    .form{
+        gap: 5px;
+    }
+    
+}

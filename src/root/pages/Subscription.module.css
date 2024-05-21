@@ -1,0 +1,87 @@
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+ .subscribed{
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+ }
+ .channel{
+       display: flex;
+       justify-content:space-evenly;
+ }
+.channel img{
+     width: 8rem;
+     height: 7.5rem;
+     border-radius: 50%;
+}
+.channel_content{
+   display: flex;
+   gap: 20px;
+   align-items: center;
+
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+}
+.desc h1{
+    color: black;
+    font: bold;
+    font-size: 1.5rem;
+}
+.desc p{
+    color: gray;
+}
+
+@media screen and (max-width: 1000px) { 
+    .channel img{
+        width: 7rem;
+        height: 6.5rem;
+   }
+    .channel_content{
+        display: flex;
+        gap: 1px;
+       flex-direction: column;
+    }     
+
+
+}
+
+@media screen and (max-width: 480px) {  
+    .channel_content{ 
+        gap: 0px;
+     }
+     .desc{
+        gap:0px;
+    }
+    .channel{
+      gap: 10px;
+  }
+    .channel_content button{
+        font-size: 12px;
+        padding: 0 10px 0 10px;
+    }
+    .channel_content{
+        display: flex;
+        gap: 1px;
+       flex-direction: column;
+    }     
+    .channel img{
+        width: 5rem;
+        height: 4.5rem;
+   }
+.desc h1{
+    font-size: 1rem;
+}
+.desc p{
+    font-size: 0.7rem;
+}
+}

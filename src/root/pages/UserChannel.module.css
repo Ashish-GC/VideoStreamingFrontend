@@ -1,0 +1,125 @@
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.userDetails{
+ width: 100%;
+ padding-top: 30px;
+}
+.banner{ 
+    display: flex;
+    justify-content: center;
+  
+}
+.banner img{
+    width: 85%;
+    height: 10rem;
+    object-fit: none;
+    border-radius: 15px;
+}
+ .user{
+     display: flex;
+     gap: 1rem;
+     padding-left: 80px;
+     margin-top:10px
+ }
+ .user img{
+    border-radius: 50%;
+    width: 8rem;
+    height: 7.5rem;
+ }
+ .desc{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   color: gray;
+ } 
+ .userDashboard{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+ }
+ .navbar{
+    margin-top: 10px;
+     /* border: 2px solid blue; */
+     padding: 10px;
+     padding-left: 80px;
+     border-bottom: 1px solid rgb(229, 228, 228);
+ }
+.navbar ul{
+  display: flex;
+   gap: 2rem;
+}
+
+.userVideo{
+   width: 100%;
+   min-height: 70%;
+}
+.home{
+     height: 100%
+}
+.cardContainer{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+ }
+ .card{
+     min-height:20rem;
+     min-width: 20rem;
+ }
+
+
+.create{
+    height: 100%
+}
+
+
+@media screen and (max-width: 560px) { 
+
+.userDetails{
+ padding-top: 10px;
+}
+.banner img{
+    width: 85%;
+    height: 6rem;
+}
+ .user{
+     padding-left: 10px;
+     margin-top:15px
+ }
+ .user img{
+    width: 4.5rem;
+    height: 4rem;
+ }
+ .userDashboard{
+    margin-top: 5px;
+    gap: 3px;
+    flex-direction:column;
+ }
+ .navbar{
+     margin-top: 4px;
+     padding-left: 10px;
+ }
+.navbar ul{
+   gap: 1rem;
+}
+.cardContainer{
+    margin-top: 1rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+ }
+ .card{
+     min-height:15rem;
+     min-width: 15rem;
+ }
+
+}

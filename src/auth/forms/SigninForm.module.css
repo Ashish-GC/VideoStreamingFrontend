@@ -1,0 +1,31 @@
+
+.form{
+    min-width: 30%;
+    min-height: 40%;
+    border: 2px solid grey;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.input{
+}
+.input:hover{
+    border-color: black;
+}
+.input:focus{
+ border: none;
+}
+
+.switch{
+    margin-top: 0.5rem;
+    font-size: 12px;
+}
+.switch a{
+    color: blue;
+}
+.form button{
+    width: 30%;
+}

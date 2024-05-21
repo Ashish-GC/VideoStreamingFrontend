@@ -1,0 +1,15 @@
+
+.main{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+ }
+ .card{
+     min-height:20rem;
+     min-width: 20rem;
+     cursor: pointer;
+ }

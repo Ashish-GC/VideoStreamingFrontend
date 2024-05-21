@@ -1,0 +1,125 @@
+
+.nav{
+    width: 100%;
+    height: 100%;
+    /* border-bottom: 2px solid rgb(194, 188, 188); */
+}
+
+.nav ul{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      /* border: 2px solid red; */
+      align-items: center;
+
+}
+
+.nav li{
+   /* border: 2px solid black; */
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+ .search{
+    flex: 85%;
+}
+.search input{
+    border: 1px solid grey;
+    border-top-left-radius:13px ;
+    border-bottom-left-radius:13px ;
+    width: 50%;
+    height: 44%;
+    padding: 2px 5px 2px 15px;
+    /* padding:top right bottom left */
+    font-size: 14px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid green;
+}
+
+.search Button{
+    background-color:rgb(235, 234, 234);
+     border: 1px solid grey;
+     border-top-right-radius:13px ;
+     border-bottom-right-radius:13px ;
+     min-width:3rem;
+     height: 44%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.search Button:hover{
+    background-color:rgb(224, 224, 224);
+}
+.search Button:active{
+    transform: translateY(1px);
+}
+
+
+ .userlogo{
+ flex:15%;
+ height: 100%;
+ width: 100%;
+}
+.userlogo div {
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
+.userlogo a{
+   display: flex;
+   gap: 10px;
+}
+.userlogo div p{
+    font-size: 11px;
+}
+.userlogo div:hover{
+    cursor: pointer;
+    background-color:rgb(239, 235, 235);
+}
+
+.userAvatar{
+    flex:15%;
+    height: 100%;
+    width: 100%;
+}
+.userAvatar img{
+ width: 40px;
+ height:40px;
+ border-radius:50%;
+}
+.userlogo div:hover{
+    cursor: pointer;
+    background-color:rgb(239, 235, 235);
+}
+.userAvatar img:hover{
+    cursor: pointer;
+    background-color:rgb(239, 235, 235);
+}
+
+@media screen and (max-width: 1000px) { 
+    .userAvatar img{
+        width: 35px;
+        height:35px;
+       
+       }
+   
+}
+
+@media screen and (max-width: 480px) {  
+    .userAvatar img{
+        width: 30px;
+        height:30px;
+       }
+       .userlogo div {
+        padding: 0px 0px 0px 0px;
+    } 
+}
+
+

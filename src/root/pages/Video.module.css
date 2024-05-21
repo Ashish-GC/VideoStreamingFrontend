@@ -1,0 +1,102 @@
+.container{
+ width: 100%;
+ height: max-content;
+ padding: 15px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ /* border: 2px solid red; */
+}
+.video{ 
+    width:max-content;
+}
+.videoPlayer{
+    border-radius: 15px;
+}
+.content{ 
+    margin-top: 10px;
+    min-width: 75%;
+    /* border: 2px solid rgb(0, 174, 255); */
+}
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.ownerInfo{ 
+    width: 100%;
+    padding: 10px 10px 10px 0px;
+    /* border: 2px solid rgb(76, 0, 255); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ownerContainer{
+ display: flex;
+ flex-direction: row;
+ gap: 10px;
+ align-items: center;
+}
+.ownerContainer a{
+    display: flex;
+ flex-direction: row;
+ gap: 10px;
+ align-items: center;
+}
+.ownerContainer a img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.description{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: gainsboro;
+    border-radius: 15px;
+    padding: 10px;
+}
+.description div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1000px) { 
+   
+    .title{
+        margin-left: 30px;
+        font-size: 1.5rem;
+    }
+    .ownerContainer a img{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .description p{
+     font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) { 
+
+       .content{ 
+           margin-top: 10px;
+           width: 85%;
+       }
+       .title{
+           font-size: 1.5rem;
+           margin-left: 0px;
+       }
+       .ownerContainer a img{
+           width: 35px;
+           height: 35px;
+       }
+       
+       .description p{
+        font-size: 12px;
+       }
+}
